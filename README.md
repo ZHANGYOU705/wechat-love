@@ -1,4 +1,6 @@
 # 微信每日早安问候（用微信传递爱情）
+微信公众号文章教程：https://mp.weixin.qq.com/s/v3adYcM26pk-5hDg36kU3w
+视频教程：稍等，录制中……
 
 ### 点击获取[Gitee](https://gitee.com/ZHANGYOU705/wechat-love) 源码
 
