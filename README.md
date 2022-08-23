@@ -1,7 +1,9 @@
 # 微信每日早安问候（用微信传递爱情）
 1、微信公众号文章教程：https://mp.weixin.qq.com/s/v3adYcM26pk-5hDg36kU3w
 
-2、视频教程：稍等，录制中……
+2、视频教程：
+ - 视频号-->只能手机打开：https://weixin.qq.com/sph/Alhazw
+ - B站：https://www.bilibili.com/video/BV1VP41157Z7
 
 ### 点击获取[Gitee](https://gitee.com/ZHANGYOU705/wechat-love) 源码
 ![](https://img-yyxxw.zhangyou705.cn/2022/08/23/1.png)
@@ -31,3 +33,6 @@
 ### 启动
 找到Application.java直接运行即可
 ![](https://img-yyxxw.zhangyou705.cn/2022/08/23/6.png)
+
+## 技术支持
+佑佑学习网：https://www.zhangyou705.cn/
