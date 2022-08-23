@@ -9,3 +9,9 @@ spring:
   profiles:
     # 本地开发，将prod改为dev
     active: prod
+target:
+  # 推送目标微信开放ID
+  targetOpenId: 你对象扫码后你在后台看到的微信号
+  loveStart: 你们的恋爱开始日期
+  getLicense: 你们的领证日期
+  birthdayToYou: 你对象的生日

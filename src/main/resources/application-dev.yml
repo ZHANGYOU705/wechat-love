@@ -4,12 +4,6 @@ wechat:
   secret: 你的微信测试号appsecret
   # 微信内容模板ID
   templateId: 你的微信测试号模板ID
-target:
-  # 推送目标微信开放ID
-  targetOpenId: 你对象扫码后你在后台看到的微信号
-  loveStart: 你们的恋爱开始日期
-  getLicense: 你们的领证日期
-  birthdayToYou: 你对象的生日
 # 百度天气 https://lbsyun.baidu.com/apiconsole/center#/home
 weather:
   ak: 你申请的百度访问应用（AK）
