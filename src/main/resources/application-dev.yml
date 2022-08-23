@@ -1,0 +1,21 @@
+wechat:
+  # 微信公众号AK/SK https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
+  appId:
+  secret:
+  # 微信内容模板ID
+  templateId:
+target:
+  # 推送目标微信开放ID
+  targetOpenId:
+  loveStart:
+  getLicense:
+  birthdayToYou:
+# 百度天气 https://lbsyun.baidu.com/apiconsole/center#/home
+weather:
+  ak:
+  # 地区编码 https://www.mca.gov.cn/article/sj/xzqh/1980/201803/201803131454.html
+  areaCode: 110105
+# 天行彩虹屁 https://www.tianapi.com/apiview/181
+tian:
+  caihongpi:
+    key:

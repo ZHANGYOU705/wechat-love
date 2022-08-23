@@ -1,0 +1,11 @@
+server:
+  port: 8083
+logging:
+  level:
+    root: info
+spring:
+  application:
+    name: WeChatLove
+  profiles:
+    # 本地开发，将prod改为dev
+    active: prod

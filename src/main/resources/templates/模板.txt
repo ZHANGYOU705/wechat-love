@@ -1,0 +1,11 @@
+{{today.DATA}}
+{{anniversaries.DATA}}
+天气：{{weather.DATA}}
+最低温度：{{minimumTemperature.DATA}} 度
+最高温度：{{maximumTemperature.DATA}} 度
+今天是我们恋爱的第 {{loveStart.DATA}} 天
+我们已经成为合法夫妻 {{getLicense.DATA}} 天了
+距离你的生日还有 {{birthdayToYou.DATA}} 天
+
+{{caiHongPi.DATA}}
+{{loveWords.DATA}}
