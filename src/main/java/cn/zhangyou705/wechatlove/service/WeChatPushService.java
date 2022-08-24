@@ -82,9 +82,32 @@ public class WeChatPushService {
         templateMessage.addData(new WxMpTemplateData("minimumTemperature", todayWeather.getString("low") + "", "#173177"));
         templateMessage.addData(new WxMpTemplateData("maximumTemperature", todayWeather.getString("high") + "", "#FF6347"));
 
-        templateMessage.addData(new WxMpTemplateData("loveStart", DateCompareUtil.getLoveStart(loveStart), "#FF1493"));
-        templateMessage.addData(new WxMpTemplateData("getLicense", DateCompareUtil.getLicense(getLicense), "#FF6347"));
-        templateMessage.addData(new WxMpTemplateData("birthdayToYou", DateCompareUtil.getBirthdayToYou(birthdayToYou), "#FFA500"));
+        int loveStart = DateCompareUtil.getLoveStart(this.loveStart);
+        if (loveStart > 0) {
+            templateMessage.addData(new WxMpTemplateData("loveStartPrefix", "今天是我们恋爱的第 "));
+            templateMessage.addData(new WxMpTemplateData("loveStart", loveStart + "", "#FF1493"));
+            templateMessage.addData(new WxMpTemplateData("loveStartSuffix", " 天"));
+        } else {
+            templateMessage.addData(new WxMpTemplateData("loveStartPrefix", "亲爱的，我会一直守护你~"));
+        }
+
+        int license = DateCompareUtil.getLicense(getLicense);
+        if (license > 0) {
+            templateMessage.addData(new WxMpTemplateData("getLicensePrefix", "今天是我们恋爱的第 "));
+            templateMessage.addData(new WxMpTemplateData("getLicense", license + "", "#FF6347"));
+            templateMessage.addData(new WxMpTemplateData("getLicenseSuffix", " 天了~"));
+        } else {
+            templateMessage.addData(new WxMpTemplateData("getLicensePrefix", "好期待与你一起的岁岁年年~"));
+        }
+
+        int birthdayToYou = DateCompareUtil.getBirthdayToYou(this.birthdayToYou);
+        if (birthdayToYou > 0) {
+            templateMessage.addData(new WxMpTemplateData("getBirthdayToYouPrefix", "距离你的生日还有 "));
+            templateMessage.addData(new WxMpTemplateData("birthdayToYou", birthdayToYou + "", "#FFA500"));
+            templateMessage.addData(new WxMpTemplateData("getBirthdayToYouSuffix", " 天~"));
+        } else {
+            templateMessage.addData(new WxMpTemplateData("getBirthdayToYouPrefix", "亲爱的，今天是你的生日呀~"));
+        }
 
         templateMessage.addData(new WxMpTemplateData("caiHongPi", LoveWordsUtil.getCaiHongPi(key), "#FF69B4"));
         templateMessage.addData(new WxMpTemplateData("loveWords", LoveWordsUtil.getJinJu() + "", "#C71585"));
