@@ -76,15 +76,15 @@ public class WeChatPushService {
      */
     private WxMpTemplateMessage buildContext(WxMpTemplateMessage templateMessage) {
         JSONObject todayWeather = weatherUtil.getTodayWeatherByBaiDu();
+
         templateMessage.addData(new WxMpTemplateData("today", todayWeather.getString("date") + " " + todayWeather.getString("week"), "#00BFFF"));
         templateMessage.addData(new WxMpTemplateData("weather", todayWeather.getString("text_day"), "#00FFFF"));
         templateMessage.addData(new WxMpTemplateData("minimumTemperature", todayWeather.getString("low") + "", "#173177"));
         templateMessage.addData(new WxMpTemplateData("maximumTemperature", todayWeather.getString("high") + "", "#FF6347"));
 
-        templateMessage.addData(new WxMpTemplateData("loveStart", DateCompareUtil.getLoveStart(loveStart) + "", "#FF1493"));
-        templateMessage.addData(new WxMpTemplateData("getLicense", DateCompareUtil.getLicense(getLicense) + "", "#FF6347"));
-
-        templateMessage.addData(new WxMpTemplateData("birthdayToYou", DateCompareUtil.getBirthdayToYou(birthdayToYou) + "", "#FFA500"));
+        templateMessage.addData(new WxMpTemplateData("loveStart", DateCompareUtil.getLoveStart(loveStart), "#FF1493"));
+        templateMessage.addData(new WxMpTemplateData("getLicense", DateCompareUtil.getLicense(getLicense), "#FF6347"));
+        templateMessage.addData(new WxMpTemplateData("birthdayToYou", DateCompareUtil.getBirthdayToYou(birthdayToYou), "#FFA500"));
 
         templateMessage.addData(new WxMpTemplateData("caiHongPi", LoveWordsUtil.getCaiHongPi(key), "#FF69B4"));
         templateMessage.addData(new WxMpTemplateData("loveWords", LoveWordsUtil.getJinJu() + "", "#C71585"));
