@@ -32,7 +32,15 @@
 
 ### 启动
 找到Application.java直接运行即可
+
 ![](https://img-yyxxw.zhangyou705.cn/2022/08/23/6.png)
+
+## 优化
+对模板内容做了优化，采取变量的方式，按需替换
+
+![](https://img-yyxxw.zhangyou705.cn/2022/08/23/7.png)
+
+模板文件获取：src/main/resources/templates/模板.txt
 
 ## 技术支持
 佑佑学习网：https://www.zhangyou705.cn/
