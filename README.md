@@ -42,5 +42,14 @@
 
 模板文件获取：src/main/resources/templates/模板.txt
 
+## 如何获取最新的代码
+点击star，然后点击fork
+
+![](https://img-yyxxw.zhangyou705.cn/2022/08/23/10.png)
+
+Fork到你的仓库之后，再点击这个同步按钮，当我有更新的时候，会同步给你哦！
+
+![](https://img-yyxxw.zhangyou705.cn/2022/08/23/9.png)
+
 ## 技术支持
 佑佑学习网：https://www.zhangyou705.cn/
