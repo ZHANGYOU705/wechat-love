@@ -7,11 +7,13 @@ spring:
   application:
     name: WeChatLove
   profiles:
-    # 本地开发，将prod改为dev
-    active: prod
+    active: dev
 target:
-  # 推送目标微信开放ID
+  # 推送目标微信开放ID,需要填写你对象扫码后你在后台看到的微信号
   targetOpenId: 你对象扫码后你在后台看到的微信号
-  loveStart: 你们的恋爱开始日期，日期格式案例：2022-08-23
-  getLicense: 你们的领证日期，日期格式案例：2022-08-23
-  birthdayToYou: 你对象的生日，日期格式案例：2022-08-23
+  # 你们的恋爱开始日期，日期格式案例：2022-08-23
+  loveStart: 2022-08-23
+  # 你们的领证日期，日期格式案例：2022-08-23
+  getLicense: 2022-08-23
+  # 你对象的生日，日期格式案例：2022-08-23
+  birthdayToYou: 2022-08-23
